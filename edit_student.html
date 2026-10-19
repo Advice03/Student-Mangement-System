@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Edit Student | StudentMS</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="app-page"><header class="site-header app-header"><a class="brand" href="dashboard.html">🎓 Student<span class="brand-blue">MS</span></a><button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button><nav class="main-nav" id="mainNav"><a href="dashboard.html">Dashboard</a><a href="students.html">Students</a><a href="add_student.html">Add Student</a><a href="profile.html">Profile</a><a href="#" id="logoutLink">Logout</a></nav></header>
+<main class="page-wrap narrow-wrap"><div class="page-heading"><div><span class="eyebrow">STUDENT RECORDS</span><h1>Edit student</h1><p class="muted">Update the student's information.</p></div><a class="btn btn-outline-dark" href="students.html">← Back to students</a></div>
+<section class="panel form-panel"><form id="editStudentForm"><input id="originalStudentId" type="hidden"><div class="form-grid">
+<div class="form-group"><label for="studentId">Student ID *</label><input id="studentId" required maxlength="30"></div>
+<div class="form-group"><label for="studentName">Full name *</label><input id="studentName" required minlength="2"></div>
+<div class="form-group"><label for="studentEmail">Email address *</label><input id="studentEmail" type="email" required></div>
+<div class="form-group"><label for="studentPhone">Phone number</label><input id="studentPhone" type="tel"></div>
+<div class="form-group"><label for="studentCourse">Course *</label><select id="studentCourse" required><option>Software Development</option><option>Information Technology</option><option>Computer Science</option><option>Business Information Systems</option><option>Other</option></select></div>
+<div class="form-group"><label for="studentYear">Year of study *</label><select id="studentYear" required><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option><option>Postgraduate</option></select></div>
+<div class="form-group"><label for="studentStatus">Status</label><select id="studentStatus"><option>Active</option><option>Inactive</option></select></div>
+<div class="form-group"><label for="studentDate">Date added</label><input id="studentDate" type="date"></div>
+</div><p id="editStudentMessage" class="form-message" role="status"></p><div class="form-actions"><button class="btn btn-primary" type="submit">Save changes</button><a class="btn btn-outline-dark" href="students.html">Cancel</a></div></form></section></main><footer class="mini-footer">© 2026 StudentMS · Learning project</footer><script src="js/app.js"></script><script src="js/students.js"></script></body></html>
